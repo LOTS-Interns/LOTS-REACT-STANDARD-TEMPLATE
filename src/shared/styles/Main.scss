@@ -1,0 +1,19 @@
+@import "./logout/LoggedOut.scss";
+@import "./kits/Kit.scss";
+@import "./loggedin/Drawer.scss";
+@import "./loggedin/MainLayout.scss";
+@import "./loggedin/Navbar.scss";
+
+// intruments
+@import "./instruments/Instruments.scss";
+@import "./purchases/Purchases.scss";
+
+// settings
+@import"./settings/Settings.scss";
+
+// auto save, field info, error boundary, number input
+@import "./Common.scss";
+
+*{
+    font-family: 'Inter';
+}

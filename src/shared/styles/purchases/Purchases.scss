@@ -1,0 +1,127 @@
+.purchases {
+    padding-top: 10px;
+
+    .purchases-main-card {
+        border-radius: $border-radius-lg;
+        background-color: var(--main-card-background-color);
+        padding: 18px;
+
+        .instrument-item {
+            border-radius: $border-radius;
+            margin: 8px 0px;
+            background-color: $white-color;
+            transition: 0.3s ease-in-out all;
+            padding: 10px;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+
+            .span-label {
+                display: block;
+                font-size: $font-size-xs;
+                color: $primary-color;
+                text-transform: uppercase;
+                margin: 0;
+                line-height: 1;
+                transition: 0.3s ease-in-out all;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        .ijg-empty-message {
+            h6 {
+                color: var(--color-text);
+            }
+        }
+    }
+
+}
+
+.purchases-view-page {
+    .purchases-main-card {
+        border-radius: $border-radius-lg;
+        background-color: var(--main-card-background-color);
+    }
+
+    .purhase-page-form {
+        background-color: var(--card-background-color);
+        padding: $padding-lg;
+        border-radius: $border-radius-lg;
+
+        .uk-form-label {
+            font-size: $font-size;
+            color: var(--color-text);
+            font-weight: $font-weight-semibold;
+            margin-top: 10px;
+        }
+    }
+
+    .purhase-page-table {
+        background-color: var(--background-color);
+        border-radius: $border-radius-lg;
+    }
+
+    // new csss
+    .purchases-main-card {
+        // new
+        border-radius: $border-radius-lg;
+        background-color: var(--main-card-background-color);
+        // old
+        position: relative;
+        background-color: $white-color !important;
+        border: 2px solid #fafafa;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            border: 2px solid $primary-color;
+            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .purhase-page-table {
+        // new
+        background-color: var(--background-color);
+        border-radius: $border-radius-lg;
+        // old
+        overflow-y: auto;
+
+        .header {
+            th {
+                font-weight: $font-weight-semibold;
+                text-transform: none;
+                white-space: nowrap;
+                padding: 10px 3px;
+            }
+        }
+
+        .row {
+            cursor: pointer;
+
+            td {
+                font-size: $font-size;
+                padding: 10px 3px;
+            }
+
+            .controls {
+                white-space: nowrap;
+            }
+
+            .status {
+                height: 10px;
+                width: 10px;
+                background-color: #fff;
+                border-radius: 10px;
+            }
+
+            .actual-value {
+                color: #fff;
+                text-align: center;
+            }
+
+            .purchase-input {
+                min-width: 120px;
+            }
+        }
+    }
+}
